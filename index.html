@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-34b468a5-e628-4bb4-83eb-c2e28045d1e1" data-elfsight-app-lazy></div>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alhan Ali | Personal Website</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('background.jpg') center/cover no-repeat fixed;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6); /* dark overlay */
+      z-index: -1;
+    }
+
+    .avatar-container {
+      position: fixed;
+      bottom: 10px;
+      left: -150px;
+      z-index: 1000;
+      animation: walkAcross 10s linear forwards;
+      pointer-events: none;
+    }
+
+    .avatar {
+      height: 120px;
+      animation: wave 2s infinite ease-in-out;
+      transform-origin: center top;
+    }
+
+    @keyframes walkAcross {
+      0% { left: -150px; }
+      100% { left: 100vw; }
+    }
+
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      20% { transform: rotate(3deg); }
+      40% { transform: rotate(-3deg); }
+      60% { transform: rotate(2deg); }
+      80% { transform: rotate(-2deg); }
+    }
+
+    .highlight {
+      color: #00ccff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Alhan Ali</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Avatar walking across screen -->
+  <div class="avatar-container">
+    <img src="bitmoji.png" alt="Alhan waving" class="avatar" />
+  </div>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="hero-text">
+        Hello! I’m <span class="highlight">Alhan Ali</span>, currently preparing to enter <span class="highlight">Grade 11</span>. I have a deep passion for learning, especially in <span class="highlight">Systems Design & Technology</span> and <span class="highlight">Math</span> — my two favourite subjects that inspire me to think creatively and solve complex problems every day.
+      </p>
+
+      <p class="hero-text">
+        I was born in Karachi, Pakistan, a vibrant city rich in culture and history. Over the years, I’ve been lucky enough to travel to incredible places including Singapore, Kuala Lumpur, Toronto, Edmonton, and Calgary, each visit broadening my perspectives and fueling my curiosity about the world.
+      </p>
+
+      <p class="hero-text">
+        Outside academics, I am a die-hard Pakistan cricket fan, and cricket is my favourite sport. Whether following international matches or playing with friends, cricket teaches me teamwork, focus, and resilience — values I carry into everything I do.
+      </p>
+
+      <p class="hero-text">
+        This website showcases my journey through volunteering, projects, achievements, and hobbies. Feel free to explore and reach out!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Alhan Ali. All rights reserved.
+  </footer>
+
+  <script>
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        header.classList.add('hide-header');
+      } else {
+        header.classList.remove('hide-header');
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+</body>
+</html>

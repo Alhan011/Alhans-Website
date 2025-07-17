@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alhan Ali - Experience</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-34b468a5-e628-4bb4-83eb-c2e28045d1e1" data-elfsight-app-lazy></div>
+
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('experience.jpg') center/cover no-repeat fixed;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    .section,
+    .alt-bg,
+    .experience-card {
+      background: transparent !important;
+      box-shadow: none;
+      border: none;
+    }
+
+    .experience-card {
+      padding: 1em;
+      margin-bottom: 1em;
+      color: white; /* Ensure text is visible on dark background */
+    }
+
+    h2 {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Alhan Ali</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section alt-bg">
+    <h2>Experience</h2>
+
+    <div class="experience-card">
+      <strong>Junior Volunteer Lead (JVL)</strong> – Guiding junior volunteers and organizing events.
+    </div>
+
+    <div class="experience-card">
+      <strong>Math & English Tutor</strong> – Helping kids improve their skills at local mosque.
+    </div>
+
+    <div class="experience-card">
+      <strong>Camp Al-Ummah Participant</strong> – Engaged in leadership, identity, and faith-based programming with Ismaili Muslim youth from across Canada.
+    </div>
+
+    <div class="experience-card">
+      <strong>PA Team Member</strong> – Responsible for controlling the audio system at the local mosque during events and services.
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Alhan Ali. All rights reserved.
+  </footer>
+
+  <script>
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        header.classList.add('hide-header');
+      } else {
+        header.classList.remove('hide-header');
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+</body>
+</html>
